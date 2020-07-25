@@ -1,0 +1,167 @@
+@font-face{
+font-family: myf;
+src:url(Manrope/Manrope-VariableFont_wght.ttf);
+}
+*{
+margin: 0px;
+padding :0px;
+display: inline-block;
+
+font-family: https://fonts.google.com/specimen/Manrope;
+font-family: myf;
+}
+head{
+	display: none;
+}
+div{
+	height: 100%;
+	float: left;
+	width: 37%;
+	overflow: hidden;
+
+	}
+#all{
+	background: white;
+	border-radius: 12px;
+	width: 115vh;
+	height:37%;
+	overflow: auto;
+	position: relative;
+	left:8%;
+	box-shadow:5px 6px 3px hsla(212, 23%, 89%,0.5),10px 15px 3px hsla(212, 23%, 90.5%,0.5),16px 20px 3px hsla(212, 23%, 92%,0.5),24px 30px 3px hsla(212, 23%, 95%,0.5),28px 35px 3px hsla(212, 23%, 97%,0.5);
+}
+img{
+	object-fit: cover;
+    height: 103%;
+	}
+body>div{
+	background:  hsl(210, 46%, 95%);
+	position: absolute;
+	top: 0;bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------*/
+span{
+	display: inline-block;
+	width:63%;
+	box-sizing: border-box;
+	padding:17px 48px;
+	font-weight: 800;
+	color: hsl(217, 19%, 35%);
+	line-height: 1.45em;
+	letter-spacing: 1.2px;
+}
+span::after{
+	content:'Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.';
+	display: block;
+	font-weight: 500;
+	color:hsl(214, 17%, 51%);
+	font-size:11px;
+	padding-top: 10px;
+	letter-spacing: 1px;
+	line-height: 15px;
+	letter-spacing: 0.8px;
+	}
+/*---------------------------------------------------------------------------*/	
+#lower{
+	overflow: visible;
+	width:63%;
+	height: 25%;
+	float: right;
+	}
+#lower img{
+	border-radius: 50%;
+	height:80%;
+	margin:-5px auto auto 40px;
+	}
+#lower p::after{
+content:'28 Jun 2020';
+display: block;
+padding-top:1.9px; 
+font-size: 0.96em;
+color: hsl(214, 17%, 51%);
+font-weight: 500; 
+}
+#lower p{
+	padding-left: 10px;
+	padding-top: 5px;
+	position: relative;
+	bottom:11px;
+	font-size: 11.5px;
+	font-weight: 700;
+	color:hsl(217, 17%, 35%);
+}
+/*-----------------------------------------------------------------------------------*/
+	#lower svg{
+	float: right;
+	display: inline-block;
+	position: relative;
+	height: 28%;
+	background: hsl(210, 46%, 95%);
+	padding: 8.5px;
+	border-radius: 50%;
+	margin-right: 45px;
+	margin-top: -2px;
+	fill:#6E8098;
+}
+
+#share svg{
+	background: hsl(217, 19%, 35%);
+	padding: 4%;
+	float:right;
+	bottom: 25%;
+	position: relative;
+}
+#share{
+	background: hsl(217, 19%, 35%);
+	height: 49px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	width:240px;
+	padding: 14px 30px;
+	overflow: visible;
+	transform: translate(0,-60px);
+	transition:0.2s linear;
+	}
+#share p{
+	color: hsl(214, 17%, 51%);
+    display:inline-block; 
+    font-size: 0.80em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 1px 2px;
+}
+div#share::after{
+	content: '';
+	height: 0;
+	width: 0;
+	display:inline-block;
+	transform: rotate(45deg);
+	border-right:13px solid hsl(217, 19%, 35%);
+	border-bottom: 13px solid hsl(217, 19%, 35%);
+	position: relative;
+	left: 75px;
+	transform: translate(0,83px) rotate(45deg);
+	transition:0.2s linear;
+}
+#shout{
+	width: 240px;
+	height: 60px;
+	position: relative;
+	right: 4.8%;
+	top: 14px;
+	transition-delay: 2s;
+}
+div.pout #share{
+	transform: translate(0,0);
+}
+div.pout #share::after{
+transform: translate(0,0) rotate(45deg);	
+}
+
+
+/*-----------------------------------------------------------------------*/
